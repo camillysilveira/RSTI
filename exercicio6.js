@@ -10,4 +10,3 @@ replace.question('Informe um número inteiro: ', (num1) => {
         console.log(`O sucessor é ${soma} e seu antecessor é ${subtracao}`)
         replace.close()
     })
-})
