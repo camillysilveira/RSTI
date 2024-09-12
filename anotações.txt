@@ -1,0 +1,67 @@
+Salvar e subir para o git:
+git add nomedoarquivo
+git commit -m "nomeidentificação"        
+git push
+
+ctrl + B - abrir e fechar lateral do vscode
+* matemáticqa simples/programação JavaScript
+
+nodenomedoarquivo.js - executar
+${parseInt(num1) + parseInt(num2)} - erros de soma (ex: 5+22= 522)
+--> Passar de string para inteiro
+
+Nome de Variáveis:
+-Não pode caracter especial
+-Letra Minúscula
+-Nome descritivo
+-Somente letras!
+
+
+*CamelCase - nomeArquivo
+-->Variáveis, Constantes, Funções e Métodos
+
+*Pascal Case - NomeArquivo
+--> Classes
+
+
+Para arquivos:
+-->Camel Case
+-->Snake Case
+
+Em caso de logout:
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+After doing this, you may fix the identity used for this commit with:
+    git commit --amend --reset-author
+
+Inserir:
+PS C:\Users\CAMILLYSILVEIRA\Desktop\RSTI>     git config --global user.name "Camilly Silveira"
+PS C:\Users\CAMILLYSILVEIRA\Desktop\RSTI>     git config --global user.email "camillysillveira@gmail.com"
+PS C:\Users\CAMILLYSILVEIRA\Desktop\RSTI> git commit -m "aulas"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\CAMILLYSILVEIRA\Desktop\RSTI> git push
+
+-----------------*-------------*----------------*---------------*----
+*Tarefa depois dos exercícios:*
+Executar exemplos, anotar o resultado, adicionar o console.log array 
+e informar o resultado.
+--> Montar um resumo de cada método.
+-----------*----------*-----------------*-------------*-----------
+ex:
+let array = ['a', 'b', 'c']
+console.log(arraypop())
+--> Anotar Resultado
+
+array.pop()
+console.log(array)
+-->Anotar o resultado
+
+INDICAR A DIFERENÇA DOS RESULTADOS
+
+Site: playcode.io
