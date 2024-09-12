@@ -1,3 +1,4 @@
+/*
 let petz = ["cachorro", "gato", "tartaruga"]
 
 const removerFimPetz = (pet) => {
@@ -6,3 +7,13 @@ const removerFimPetz = (pet) => {
 }
 
 removerFimPetz()
+*/
+
+let petz = ["cachorro", "gato", "tartaruga"];
+
+const removerFimPetz = () => {
+  petz.pop();
+  console.log(petz);
+};
+
+removerFimPetz();
