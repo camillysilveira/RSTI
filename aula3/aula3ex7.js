@@ -1,7 +1,8 @@
 let petz = ['cachorro', 'gato', 'tartaruga']
 
-const adicionarPetz = () => {
-  petz.splice('peixe')
+const adicionarPosicaoPetz = (pet) => {
+  petz.splice(2, 0, pet)
+  console.log(petz) // ['cachorro', 'gato', 'onça', 'tartaruga']
 }
 
-adicionarInicioPetz()
+adicionarPosicaoPetz('onça')
