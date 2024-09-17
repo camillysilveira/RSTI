@@ -15,17 +15,12 @@ adicionarInicioPetz();
 removerFimPetz();
 */
 
-let petz = ["cachorro", "gato", "tartaruga"];
+let petz = ['cachorro', 'gato', 'tartaruga']
 
-const adicionarInicioPetz = () => {
-  petz.unshift("vaca", "galinha");
-};
+const adicionarInicioRemoverFimPetz = () => {
+  petz.unshift('vaca')
+  petz.pop()
+  console.log(petz)
+}
 
-const removerFimPetz = () => {
-  petz.pop();
-};
-
-adicionarInicioPetz();
-removerFimPetz();
-console.log(petz); // adicionar console.log apenas depois de executar a operação
-//o array final será impresso apenas uma vez
+adicionarInicioRemoverFimPetz()
