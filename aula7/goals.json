@@ -1,0 +1,30 @@
+[
+  {
+    "value": "Já chega!",
+    "checked": true
+  },
+  {
+    "value": "Escovar os dentes",
+    "checked": true
+  },
+  {
+    "value": "Ler mais",
+    "checked": true
+  },
+  {
+    "value": "Acordar cedo",
+    "checked": true
+  },
+  {
+    "value": "Chaves",
+    "checked": true
+  },
+  {
+    "value": "Cadeira",
+    "checked": false
+  },
+  {
+    "value": "mouse",
+    "checked": false
+  }
+]
