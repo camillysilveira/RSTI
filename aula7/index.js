@@ -101,6 +101,28 @@ const listIncompletedGoals = async () => {
   })
 }
 
+/* const listCompletedGoalsAlternative = async () => {
+  const completedGoals = goals.filter((goal) => goal.checked)
+  console.log(`Você completou ${completedGoals.length}/${goals.length} metas.`)
+  return
+}*/
+
+const porcentualCompletedGoals = async () => {
+  const completedGoals = goals.filter((goal) => goal.checked)
+
+  const parcial = `${completedGoals.length}/${goals.length}`
+
+  const percentage = (completedGoals.length / goals.length) * 100
+
+  console.log(`Você completou ${percentage.toFixed(2)}% das metas.`)
+  console.log(`Você completou ${completedGoals.length}/${goals.length} metas.`)
+
+  return {
+    parcial: `${completedGoals.length}/${goals.length}`,
+    porcentagem: percentage.toFixed(2)
+  }
+}
+
 const deleteGoals = async () => {
   /* Informa o usuário caso não existam metas cadastradas */
   if (goals.length == 0) {
@@ -135,12 +157,6 @@ const deleteGoals = async () => {
   })
 
   message = 'Meta(s) deletada(s) com sucesso!'
-}
-
-const listCompletedGoalsAlternative = async () => {
-  const completedGoals = goals.filter((goal) => goal.checked)
-  console.log(`Você completou ${completedGoals.length}/${goals.length} metas.`)
-  return
 }
 
 const updateGoals = async () => {
@@ -186,8 +202,6 @@ const updateGoals = async () => {
 }
 
 const showMessage = () => {
-  console.clear()
-
   if (message != '') {
     console.log(message)
     console.log('')
@@ -216,6 +230,10 @@ const start = async () => {
         {
           name: 'Listar meta(s) realizada(s)',
           value: 'completed'
+        },
+        {
+          name: 'Listar meta(s) conclúidas(s) (detalhado)',
+          value: 'porcentualAlternative'
         },
         {
           name: 'Listar meta(s) não realizada(s)',
@@ -249,6 +267,9 @@ const start = async () => {
         break
       case 'incompleted':
         await listIncompletedGoals()
+        break
+      case 'porcentualAlternative':
+        await porcentualCompletedGoals()
         break
       case 'update':
         await updateGoals()
