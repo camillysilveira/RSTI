@@ -23,17 +23,20 @@ const isValidPhone = (phone, hasDDD) => {
   return hasDDD ? phone.length === 11 : phone.length === 9
 }
 
-function espaço(numeros) {
+const espaço = (numeros) => {
   const hasDDD = numeros.slice(0, 2)
   const phone = numeros.slice(2)
 
-  numeros.lenght > 11 || numeros.lenght < 9
-    ? console.log(`Número de telefone inválido`)
-    : console.log(`+${hasDDD} ${phone}`)
+  if (numeros.length > 11 || numeros.length < 9) {
+    console.log(`Número de telefone inválido`)
+    return null
+  } else {
+    return `+${hasDDD} ${phone}`
+  }
 }
 
 const addContact = async () => {
-  let name, phone, hasDDD
+  let name, phone, hasDDD, formattedPhone
 
   while (true) {
     if (message) {
@@ -80,12 +83,16 @@ const addContact = async () => {
       continue
     }
 
-    espaço(phone)
+    formattedPhone = espaço(phone)
+
+    if (!formattedPhone) {
+      continue
+    }
 
     break // Sai do loop se todos os dados estiverem válidos
   }
 
-  contacts.push({ name, phone })
+  contacts.push({ name, phone: formattedPhone })
   message = 'Contato adicionado com sucesso!'
 }
 
