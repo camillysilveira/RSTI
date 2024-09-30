@@ -25,12 +25,17 @@ rl.question('Olá, informe o seu nome completo: ', (nome) => {
               2
             )}.`
           )
-        } else {
+          /*} else if { --> Precisa de uma condição entre parênteses como na situação do if (sexo.toUpperCase() === 'M') */
+        } else if (sexo.toUpperCase() === 'F') {
           let valorComDesconto = valorCompra * descontoFeminino
           console.log(
             `O total da sua compra com desconte é R$${valorComDesconto.toFixed(
               2
             )}.`
+          )
+        } else {
+          console.log(
+            'Sexo informado é inválido. Utilize "M" para Masculino ou "F" para Feminino.'
           )
         }
 
