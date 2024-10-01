@@ -18,7 +18,7 @@ rl.question('Olá, informe o seu nome completo: ', (nome) => {
 
         if (sexo.toUpperCase() === 'M') {
           // toUpperCase - permite que você compare a entrada do usuário sem se preocupar se ele digitou em maiúsculas ou minúsculas.
-          let valorComDesconto = valorCompra * descontoMasculino // é possível simplificar o código e evitar a declaração de uma variável intermediária
+          let valorComDesconto = valorCompra - valorCompra * descontoMasculino // é possível simplificar o código e evitar a declaração de uma variável intermediária
           //como valorComDesconto ao calcular e exibir o valor diretamente dentro do bloco if ou else if.
           console.log(
             `O total da sua compra com desconte é R$${valorComDesconto.toFixed(
@@ -27,7 +27,7 @@ rl.question('Olá, informe o seu nome completo: ', (nome) => {
           )
           /*} else if { --> Precisa de uma condição entre parênteses como na situação do if (sexo.toUpperCase() === 'M') */
         } else if (sexo.toUpperCase() === 'F') {
-          let valorComDesconto = valorCompra * descontoFeminino
+          let valorComDesconto = valorCompra - valorCompra * descontoFeminino
           console.log(
             `O total da sua compra com desconte é R$${valorComDesconto.toFixed(
               2
