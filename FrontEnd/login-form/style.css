@@ -128,22 +128,22 @@ input:hover {
   outline: 0;
 }
 
-/*.error-Email {
+input:disabled {
+  opacity: 0.35;
+}
+
+.error-Email pre {
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 2.1rem;
   color: #7c3aed;
 }
 
-.error-Senha {
+.error-Senha pre {
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 2.1rem;
   color: #7c3aed;
-}*/
-
-input:disabled {
-  opacity: 0.35;
 }
 
 .eye {

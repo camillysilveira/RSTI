@@ -9,9 +9,6 @@ form.addEventListener('submit', function (event) {
   const errorEmailElement = document.querySelector('.error-Email')
   const errorSenhaElement = document.querySelector('.error-Senha')
 
-  const errorEmail = document.createElement('pre')
-  const erroSenha = document.createElement('pre')
-
   errorEmailElement.innerHTML = ''
   errorSenhaElement.innerHTML = ''
 
@@ -19,12 +16,14 @@ form.addEventListener('submit', function (event) {
 
   if (!validatedEmail(email)) {
     valid = false
+    const errorEmailMessage = document.createElement('pre')
     errorEmailMessage.textContent = 'E-mail inválido!'
     errorEmailElement.appendChild(errorEmailMessage)
   }
 
   if (password.length < 6) {
     valid = false
+    const errorSenhaMessage = document.createElement('pre')
     errorSenhaMessage.textContent = 'Senha inválida!'
     errorSenhaElement.appendChild(errorSenhaMessage)
   }
@@ -60,3 +59,35 @@ function validatedEmail(email) {
   console.log(customType);
 }
  */
+
+document
+  .getElementById('loginForm')
+  .addEventListener('submit', async function (event) {
+    event.preventDefault()
+
+    const username = document.getElementById('name').value
+    const password = document.getElementById('password').value
+
+    const responseElement = document.getElementById('response')
+    responseElement.innerHTML = ''
+
+    try {
+      const response = await fetch('https://dummyjson.com/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username, password })
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        responseElement.innerHTML = `<p>Login bem sucedid! Token ${data.accessToken}</p>`
+      } else {
+        responseElement.innerHTML = `<p>Erro: ${data.message}</p>`
+      }
+    } catch (error) {
+      responseElement.innerHTML = `<p>Erro na requisição: ${error.message}</p>`
+    }
+  })
