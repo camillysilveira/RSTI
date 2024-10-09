@@ -69,7 +69,7 @@ Site: playcode.io
 Ultilizar Chalk no index.js
 h ttps://github.com/chalk/chalk?tab=readme-ov-file
 h ttps://medium.com/@nicolasbontempo/programando-javascript-orientado-a-objetos-87b1e98af6e4
-
+------------------------------------------------------------------------------
 PS C:\Users\CAMILLYSILVEIRA\Desktop\RSTI> cd ..                 
 PS C:\Users\CAMILLYSILVEIRA\Desktop> cd .\RSTI\FrontEnd    
 PS C:\Users\CAMILLYSILVEIRA\Desktop\RSTI\FrontEnd> cd .\profile-card\
@@ -84,3 +84,9 @@ PS C:\Users\CAMILLYSILVEIRA\Desktop\RSTI\FrontEnd\profile-card> npm run dev
   ➜  Local:   h ttp://localhost:5173/ ---> segura ctrl e clica no link
   ➜  Network: use --host to expose
   ➜  press h + enter to show help
+
+Desafio Music Player
+ht tps://github.com/maykbrito/boracodar/tree/main/01
+
+Aprender HTTP
+--> h ttps://http.cat/
