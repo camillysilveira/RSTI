@@ -10,20 +10,25 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Profile Card</title>
   </head>
   <body>
     <div class="profile-card">
       <div class="image">
         <img
-          src="https://i.discogs.com/ayN91VSuBjUlneWIOFOtaHP8U6utc6pBzQnkCjl0la4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxMTY2/NzctMTQxMTQ3Njk2/Mi05MjYxLmpwZWc.jpeg"
-          alt="Madeira escrito T.N.T e AC/DC"
+          id="avatar"
+          src="https://avatars.githubusercontent.com/u/181002946?v=4"
+          alt=""
+          class="profile-image"
         />
       </div>
 
       <div class="text-data">
-        <h1 class="name">Camilly Silveira</h1>
+        <h1 id="name"></h1>
         <p class="job">Estudante de Front-End</p>
       </div>
 
@@ -42,10 +47,17 @@
       </div>
 
       <ul class="analytics">
-        <li class="data"><i class="bx bx-hearth"></i> 60.4k</li>
-        <li class="data"><i class="bx bx-message-rounded"></i> 20k</li>
-        <li class="data"><i class="bx bx-share"></i> 12k</li>
+        <li class="data">
+          <i class="bx bx-heart"></i><span id="followers"></span>
+        </li>
+        <li class="data">
+          <i class="bx bx-message-rounded"></i><span id="following"></span>
+        </li>
+        <li class="data">
+          <i class="bx bx-share"></i><span id="public"></span>
+        </li>
       </ul>
     </div>
   </body>
+  <script src="profile.js"></script>
 </html>

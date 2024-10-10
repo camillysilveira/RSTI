@@ -11,7 +11,7 @@ body {
   justify-content: center;
   background-color: #f4faf4;
 
-  font-family: 'Orienta', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -42,7 +42,7 @@ ul {
   background-color: #268600;
 }
 
-.image {
+.image #avatar {
   position: relative;
   height: 150px;
   width: 150px;
@@ -50,12 +50,16 @@ ul {
   background-color: #268600;
   padding: 3px;
   margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image .profile-image {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 50%;
   border: 3px solid #ffffff;
 }
@@ -68,7 +72,7 @@ ul {
   color: #333;
 }
 
-.text-data .name {
+.text-data #name {
   font-size: 22px;
   font-weight: 500;
 }
@@ -94,7 +98,7 @@ ul {
   width: 34px;
   border-radius: 50%;
   margin: 0 8px;
-  background-color: #268600;
+  background-color: #4070f4;
 }
 
 #facebook {
