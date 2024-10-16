@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,12 +14,25 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <!--Icones-->
-    <link rel="stylesheet" href="style.css" />
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
 
-    <title>Beauty Salon</title>
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <a href="#home" class="back-to-top">
+      <i class="icon-phone"></i>
+    </a>
+
+    <title>Beuaty Salon</title>
   </head>
   <body>
     <header id="header">
@@ -25,11 +40,21 @@
         <a href="#" class="logo">beauty<span>salon</span>.</a>
         <div class="menu">
           <ul class="grid">
-            <li><a class="title" href="#home">Início</a></li>
-            <li><a class="title" href="#about">Sobre</a></li>
-            <li><a class="title" href="#services">Serviços</a></li>
-            <li><a class="title" href="#testimonials">Depoimentos</a></li>
-            <li><a class="title" href="#contact">Contato</a></li>
+            <li>
+              <a class="title" href="#home">Início</a>
+            </li>
+            <li>
+              <a class="title" href="#about">Sobre</a>
+            </li>
+            <li>
+              <a class="title" href="#services">Serviços</a>
+            </li>
+            <li>
+              <a class="title" href="#testimonials">Depoimentos</a>
+            </li>
+            <li>
+              <a class="title" href="#contact">Contato</a>
+            </li>
           </ul>
         </div>
 
@@ -39,6 +64,7 @@
     </header>
 
     <main>
+      <!-- HOME -->
       <section class="section" id="home">
         <div class="container grid">
           <div class="image">
@@ -61,6 +87,7 @@
 
       <div class="divider-1"></div>
 
+      <!-- ABOUT -->
       <section class="section" id="about">
         <div class="container grid">
           <div class="image">
@@ -98,6 +125,8 @@
       </section>
 
       <div class="divider-2"></div>
+
+      <!-- SERVICES -->
       <section class="section" id="services">
         <div class="container grid">
           <header>
@@ -117,6 +146,7 @@
                 tipos de cabelos, inclusive os longos e finos.
               </p>
             </div>
+
             <div class="card">
               <i class="icon-trim"></i>
               <h3 class="title">Cortes</h3>
@@ -125,6 +155,7 @@
                 lançarem tendências com cortes diferenciados e clássicos.
               </p>
             </div>
+
             <div class="card">
               <i class="icon-cosmetic"></i>
               <h3 class="title">Tratamentos</h3>
@@ -136,9 +167,10 @@
           </div>
         </div>
       </section>
+
       <div class="divider-1"></div>
 
-      <!--Testimonials-->
+      <!-- TESTIMONIALS -->
       <section class="section" id="testimonials">
         <div class="container swiper">
           <header>
@@ -179,6 +211,7 @@
                       src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt="woman"
                     />
+                    Wanessa Souza
                   </cite>
                 </blockquote>
               </div>
@@ -250,7 +283,7 @@
         </div>
 
         <div class="social">
-          <a href="http://instagram.com" target="_blank"
+          <a href="http://instragram.com" target="_blank"
             ><i class="icon-instagram"></i
           ></a>
           <a href="" target="_blank">
@@ -263,15 +296,12 @@
       </div>
     </footer>
 
-    <a href="#home" class="back-to-top">
+    <!-- <a href="#home" class="back-to-top">
       <i class="icon-arrow-up"></i>
-    </a>
+    </a>-->
 
-    <!-- Swiper-->
+    <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- scrollreveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="main.js"></script>
   </body>
