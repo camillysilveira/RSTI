@@ -514,6 +514,10 @@ footer .social a:hover {
   transform: translateY(0);
 }
 
+.seta {
+  color: var(--bg-color);
+}
+
 /* Media Queries */
 
 /* extra large devices: 1200 > */
