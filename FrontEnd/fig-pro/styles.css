@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 img {
@@ -41,7 +41,7 @@ a {
   --white: #ffffff;
   --black: #000000;
   --secondary-color: #fcc26b;
-  --secondary-font: 'Road Rage', sans-serif;
+  --secondary-font: "Road Rage", sans-serif;
 }
 
 html {
@@ -94,10 +94,10 @@ header .container nav .active {
 }
 
 header .container nav .active:before {
-  content: '';
+  content: "";
   width: 0.4rem;
   height: 3.2rem;
-  background: url('./assets/line.svg') no-repeat center center;
+  background: url("./assets/line.svg") no-repeat center center;
   position: absolute;
   left: 50%;
   margin-left: -0.2rem;
@@ -118,7 +118,7 @@ header .container nav a:hover {
   width: 100%;
   height: 95.3rem;
   position: relative; /* por conta da imagem de fantasma */
-  background: url('../assets/bg-hero.png') no-repeat top center;
+  background: url("../assets/bg-hero.png") no-repeat top center;
   background-size: cover; /* garante que ocupe toda a tela */
 
   overflow: hidden; /* adicionar junto do fantasma */
