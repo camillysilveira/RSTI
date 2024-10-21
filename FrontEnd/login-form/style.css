@@ -3,11 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
   font-size: 62.5%;
-  font-family: 'Titillium Web', serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 body {
@@ -110,7 +111,7 @@ input::placeholder {
 
 input {
   width: 100%;
-  background: #fff;
+  background: #ffffff;
   border: 0.1rem solid #e2e8f0;
 
   padding: 1.6rem 1.2rem;
@@ -132,7 +133,7 @@ input:disabled {
   opacity: 0.35;
 }
 
-.error-Email pre {
+/*.error-Email pre {
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 2.1rem;
@@ -144,6 +145,10 @@ input:disabled {
   font-size: 1.4rem;
   line-height: 2.1rem;
   color: #7c3aed;
+}*/
+
+::-ms-reveal {
+  display: none;
 }
 
 .eye {
@@ -167,8 +172,9 @@ form button {
   background: #7c3aed;
   border-radius: 0.4rem;
   width: 100%;
-  color: #fff;
+  color: #ffffff;
   margin-block: 3.2rem;
+  font-weight: bold;
 }
 
 form button:focus {
