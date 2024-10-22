@@ -307,6 +307,243 @@ header .container nav a:hover {
   line-height: var(--line-height);
 }
 
+.how-to-use {
+  background: var(--gray-color);
+  padding-top: 10.4rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.how-to-use .container {
+  display: flex;
+}
+
+.how-to-use .container img {
+  padding-bottom: 7rem;
+}
+.how-to-use .steps {
+  padding-right: 5.4rem;
+}
+
+.how-to-use .steps ul li strong {
+  font-size: 1.8rem;
+  line-height: var(--line-height);
+  color: var(--primary-color);
+}
+
+.how-to-use .steps ul li p {
+  width: 100%;
+  max-width: 50rem;
+  padding-top: 1.8rem;
+  padding-bottom: 4.1rem;
+  color: var(--dark-gray-color);
+  font-size: 1.6rem;
+  line-height: var(--line-height);
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  margin: 0 auto;
+  left: 38%;
+  bottom: -24px;
+  padding: 9px 5.2rem;
+}
+
+.btn-secondary span {
+  font-size: 4.6rem;
+  font-family: var(--secondary-font);
+  letter-spacing: 5%;
+}
+
+.s-stories {
+  padding-top: 19.5rem;
+  padding-bottom: 16.2rem;
+}
+
+.s-stories .title {
+  text-align: center;
+  color: red;
+}
+
+.title h4 {
+  color: #8e8e8e;
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 155.3%;
+  margin-bottom: 2.4rem;
+}
+
+.title strong {
+  color: var(--secondary-color);
+}
+
+.title h2 {
+  font-family: var(--secondary-font);
+  color: var(--black);
+  font-size: 45.9rem;
+  font-weight: 400;
+  line-height: 0.7;
+  letter-spacing: 27.54px;
+  text-transform: uppercase;
+}
+
+.text {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 5.7rem;
+  position: relative;
+  z-index: 1;
+  top: -35rem;
+}
+
+.text .description {
+  padding-bottom: 13.9rem;
+  flex: 1;
+  max-width: 44.3rem;
+}
+
+.text .description p {
+  color: var(--black);
+  font-size: 1.6rem;
+  line-height: var(--line-height);
+}
+
+.text .description p:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.s-stickers {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding-top: 11.1rem;
+  padding-bottom: 8.3rem;
+}
+
+.s-stickers .title {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 45rem;
+  margin: 0 auto;
+  margin-bottom: 20.7rem;
+}
+
+.s-stickers .title h2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* gap: 3.8rem; */
+  color: var(--dark-primary-color);
+  font-size: 15rem;
+  font-weight: 400;
+  line-height: 0.7;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+}
+
+.s-stickers .title img {
+  margin-left: -3.5rem;
+}
+
+.s-stickers .title span {
+  font-family: var(--secondary-font);
+}
+
+.s-stickers .title h2 span:last-child {
+  margin-left: -0.5rem;
+}
+
+.s-stickers .title .subtitle {
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  color: var(--secondary-color);
+  font-family: 'Rock Salt', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: var(--line-height);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.all {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14.7rem 2.1rem;
+}
+
+.card-sticker {
+  width: 100%;
+  max-width: 37.8rem;
+  border-radius: 2rem;
+  border: 1px solid var(--secondary-color);
+  padding: 0.5rem;
+}
+
+.card-sticker .content {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  border: 1px solid #d9d9d9;
+  background: #eee;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.8rem;
+  padding-bottom: 2.1rem;
+}
+
+.content .image {
+  width: 100%;
+  max-width: 20.6rem;
+  height: 26.7rem;
+  display: flex;
+  align-items: flex-end; /* independete do tamanho da imagem joga para o final, garantindo o alinhamento dos demais elementos */
+  justify-content: center;
+  margin-top: -9.6rem;
+  margin-bottom: 0.9rem;
+  padding-bottom: 2.1rem;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 3.6rem;
+}
+
+.info h3 {
+  color: var(--dark-primary-color);
+  font-size: 4.1rem;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  line-height: 0.7;
+  letter-spacing: 1.64px;
+  text-transform: uppercase;
+  margin-bottom: 2.7rem;
+}
+
+.info p {
+  color: #5d5d5d;
+  font-size: 1.4rem;
+}
+
+.btn-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.icon {
+  height: 44px;
+}
+
 @media (max-width: 1440px) {
   .ilustration {
     right: -20px;
