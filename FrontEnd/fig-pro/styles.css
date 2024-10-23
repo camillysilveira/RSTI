@@ -35,15 +35,14 @@ a {
 
 /* VARIABLES */
 :root {
-  --primary-color: #1b1b1b;
-  --dark-primary-color: #242424;
-  --light-color: #868686;
   --white: #ffffff;
   --black: #000000;
   --gray-color: #f8f8f8;
+  --light-color: #868686;
+  --primary-color: #1b1b1b;
   --dark-gray-color: #787878;
   --secondary-color: #fcc26b;
-  --secondary-font: 'Road Rage', sans-serif;
+  --dark-primary-color: #242424;
 
   --line-height: 155%;
 
@@ -175,7 +174,6 @@ header .container nav a:hover {
 
 .s-hero .left-text button span {
   color: var(--black);
-  /* borda do texto */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--secondary-color);
   font-family: var(--secondary-font);
@@ -243,10 +241,10 @@ header .container nav a:hover {
 .s-info .box {
   width: 100%;
   max-width: 85.8rem;
-  height: 85.8rem;
+  height: 27.7rem;
   margin: 0 auto;
   padding: 0.5rem;
-  border: 0, 15rem solid #dadada;
+  border: 0.15rem solid #dadada;
   border-radius: 2rem;
 
   position: relative;
@@ -365,6 +363,7 @@ header .container nav a:hover {
 .s-stories {
   padding-top: 19.5rem;
   padding-bottom: 16.2rem;
+  height: 118rem;
 }
 
 .s-stories .title {
@@ -542,6 +541,51 @@ header .container nav a:hover {
 
 .icon {
   height: 44px;
+}
+
+.world {
+  padding-top: 19.5rem;
+  padding-bottom: 16.2rem;
+  height: 118rem;
+  text-align: center;
+}
+
+.world h2 {
+  font-family: var(--secondary-font);
+  color: var(--black);
+  font-size: 45.9rem;
+  font-weight: 400;
+  line-height: 0.7;
+  letter-spacing: 27.54px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.world h4 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 3.8;
+  letter-spacing: 5.75px;
+  text-align: center;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+.world strong {
+  color: var(--secondary-color);
+}
+
+.world p {
+  width: 63.2rem;
+  height: 7.5rem;
+  top: 61.45rem;
+  left: 40.3rem;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2.4;
+  text-align: center;
+  color: #9c9c9c;
 }
 
 @media (max-width: 1440px) {
