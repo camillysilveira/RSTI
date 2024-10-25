@@ -664,6 +664,90 @@ header .container nav a:hover {
   right: 0;
 }
 
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding-top: 4.9rem; /*padding permite que o footer ajuste sua altura conforme o conteúdo interno muda.*/
+  padding-bottom: 5.5rem;
+  width: 100%;
+  /*width: 14.4rem; /*height fixa em áreas como o footer porque telas de tamanhos variados podem resultar em layouts inconsistentes, afetando a responsividade*/
+  /*height: 2.98rem;*/
+}
+
+footer .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.first-part img {
+  width: 4.4rem;
+  height: 2.2rem;
+  margin-top: 0.3rem;
+  margin-left: 12.5rem;
+}
+
+.first-part p {
+  line-height: var(--line-height);
+  margin-top: 2.2rem;
+  margin-left: 13.5rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #9c9c9c;
+}
+
+.networks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  gap: 1.5rem;
+  max-width: 27rem;
+}
+
+.networks h3 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+  text-transform: uppercase;
+  opacity: 80%;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.networks ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.8rem;
+}
+
+.networks ul li a {
+  width: 27rem;
+  height: 2.3rem;
+  color: #9c9c9c;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.32rem;
+  text-transform: uppercase;
+}
+
+.second-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.second-part p {
+  color: #5c5c5c;
+  font-size: 1.5rem;
+  line-height: var(--line-height);
+  letter-spacing: -1, 0.5rem;
+  margin-top: 4.1rem;
+  flex-direction: row;
+}
+
 @media (max-width: 1440px) {
   .ilustration {
     right: -20px;
