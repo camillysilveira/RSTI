@@ -670,42 +670,42 @@ footer {
   padding-top: 4.9rem; /*padding permite que o footer ajuste sua altura conforme o conteúdo interno muda.*/
   padding-bottom: 5.5rem;
   width: 100%;
-  /*width: 14.4rem; /*height fixa em áreas como o footer porque telas de tamanhos variados podem resultar em layouts inconsistentes, afetando a responsividade*/
-  /*height: 2.98rem;*/
+  /*width: 14.4rem; height fixa em áreas como o footer porque telas de tamanhos variados podem resultar em layouts inconsistentes, afetando a responsividade
+  height: 2.98rem;*/
 }
 
-footer .container {
+footer .first-part {
+  /*deixa networks alinhado ao lado direito na horizontal*/
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.first-part img {
-  width: 4.4rem;
-  height: 2.2rem;
-  margin-top: 0.3rem;
-  margin-left: 12.5rem;
+.footer .left {
+  /*espaço entre palavras*/
+  flex: 1;
+  max-width: 60rem;
 }
 
-.first-part p {
-  line-height: var(--line-height);
-  margin-top: 2.2rem;
-  margin-left: 13.5rem;
+.left p {
   font-weight: 400;
   font-size: 1.5rem;
+  line-height: 2.3rem;
+  margin-top: 2.2rem;
   color: #9c9c9c;
 }
 
 .networks {
+  /*distanciamento e posição*/
   display: flex;
   flex-direction: column;
-  width: 100%;
   flex: 1;
   gap: 1.5rem;
   max-width: 27rem;
 }
 
 .networks h3 {
+  /*fonte e tamanho*/
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.9rem;
@@ -716,6 +716,7 @@ footer .container {
 }
 
 .networks ul {
+  /*mantém alinhados na horizontal*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -733,13 +734,23 @@ footer .container {
   text-transform: uppercase;
 }
 
+.networks a:hover {
+  opacity: 1;
+  color: var(--white);
+}
+
 .second-part {
+  /*alinha horizontalmente e abaixo do footer*/
+  border-top: 1px solid #282828;
+  margin-top: 4.1rem;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .second-part p {
+  /*fonte e opacidade*/
   color: #5c5c5c;
   font-size: 1.5rem;
   line-height: var(--line-height);
@@ -748,12 +759,39 @@ footer .container {
   flex-direction: row;
 }
 
+@media (max-width: 412px) {
+  header .container nav a {
+    display: none;
+  }
+
+  header .icon-menu .container {
+    flex-direction: row;
+  }
+
+  .s-hero .left-text .title h1 {
+    font-size: 7.3rem;
+    line-height: 52%;
+    text-align: center;
+  }
+
+  .s-hero .left-text p {
+    font-size: 1.4rem;
+    line-height: 2.17rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+}
+
 @media (max-width: 1440px) {
   .ilustration {
     right: -20px;
   }
 
   .world {
+    background-size: cover;
+  }
+
+  footer {
     background-size: cover;
   }
 }
@@ -766,4 +804,15 @@ footer .container {
   .world {
     background-size: cover;
   }
+
+  footer {
+    background-size: cover;
+  }
 }
+
+/*@media screen and (max-width: 1020px) {
+.flex-direction: colum;
+}
+.menu, .btn {
+display: none;
+}*/
