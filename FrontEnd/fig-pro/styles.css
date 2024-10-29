@@ -320,6 +320,7 @@ header .container nav a:hover {
 .how-to-use .container img {
   padding-bottom: 7rem;
 }
+
 .how-to-use .steps {
   padding-right: 5.4rem;
 }
@@ -759,19 +760,25 @@ footer .first-part {
   flex-direction: row;
 }
 
-@media (max-width: 412px) {
-  header .container nav a {
-    display: none;
+@media (max-width: 480px) {
+  header {
+    top: 7.3rem;
+    left: 1.8rem;
+    padding-left: 1.8rem;
+    padding-right: 3.6rem;
+    margin-top: -7rem;
   }
 
-  header .icon-menu .container {
-    flex-direction: row;
+  header .container nav {
+    display: none;
+    gap: 1.5rem;
   }
 
   .s-hero .left-text .title h1 {
     font-size: 7.3rem;
-    line-height: 52%;
+    line-height: 72%;
     text-align: center;
+    margin-top: -11.5rem;
   }
 
   .s-hero .left-text p {
@@ -779,6 +786,81 @@ footer .first-part {
     line-height: 2.17rem;
     margin-bottom: 3rem;
     text-align: center;
+    margin: 0 1.6rem 1.6rem;
+    color: #8e8e8e;
+  }
+
+  .s-hero .left-text button {
+    padding-left: 13.3rem;
+    margin-top: 3rem;
+  }
+
+  .ilustration {
+    left: 18.6rem;
+    top: 48rem;
+  }
+
+  .users {
+    padding-top: 25rem;
+    padding-left: 5.5rem;
+  }
+
+  .s-info p {
+    font-size: 1.3rem;
+    line-height: 2.09rem;
+    padding-left: 1.6rem;
+    padding-right: 1.7rem;
+  }
+
+  .s-info .box {
+    width: 100%;
+    width: 36.5rem;
+    height: 56.4rem;
+  }
+
+  .s-info .info-ilustration {
+    max-width: 121px;
+    max-height: 216px;
+    width: auto;
+    height: auto;
+  }
+
+  .how-to-use .steps {
+    padding-right: 2.7rem;
+    padding-top: 35.3rem;
+  }
+
+  .how-to-use .steps ul li p {
+    padding-left: 2.7rem;
+    width: 33.9rem;
+    height: 15rem;
+    font-size: 1.3rem;
+  }
+
+  .how-to-use .container img {
+    position: absolute;
+    padding-top: 0;
+    bottom: 55.5rem;
+    padding-left: 3.8rem;
+    padding-right: 8rem;
+  }
+
+  .btn-secondary {
+    left: 13rem;
+    bottom: 11px;
+    padding: 9px 2.6rem;
+    margin-bottom: -12.5rem;
+  }
+
+  .btn-secondary span {
+    font-size: 2.2rem;
+  }
+
+  .s-stories {
+    padding-top: 27.9rem;
+    height: 62.3rem;
+    width: 36.1rem;
+    left: 1.6rem;
   }
 }
 
@@ -806,6 +888,10 @@ footer .first-part {
   }
 
   footer {
+    background-size: cover;
+  }
+
+  .how-to-use {
     background-size: cover;
   }
 }
