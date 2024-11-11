@@ -29,10 +29,6 @@ body.light-theme #calculator {
   background: whitesmoke;
 }
 
-body.light-theme #calculator span {
-  color: #6b6b6b;
-}
-
 #calculator {
   background: #2d2a37;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
@@ -43,28 +39,51 @@ body.light-theme #calculator span {
   border-radius: 48px;
 }
 
+#calculator > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: #111;
+  color: #eee;
+}
+
+#calculator > button:hover {
+  background-color: #eee;
+  color: #111;
+}
+
 #display {
-  margin-top: 54px;
-  padding-inline: 54px;
+  padding: 2.5rem 2.5rem;
 }
 
-#last-calc {
-  text-align: right;
-  font-size: 20px;
-  line-height: 140%;
-  color: #6b6b6b;
-}
-
-#result {
-  margin-top: 8px;
+#calculator > #display {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: #ebebeb;
+  font-size: 2.5rem;
 }
 
-#result span {
-  font-size: 36px;
-  line-height: 140%;
-  color: #ebebeb;
+#calculator > #dislpay > .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+body.light-theme #calculator #display .previous-operand {
+  color: #2d2a37;
+}
+
+#calculator > #display > .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+body.light-theme #calculator #display .current-operand {
+  color: #2d2a37;
 }
 
 #keyboard {
@@ -97,11 +116,28 @@ body.light-theme #calculator span {
   justify-content: center;
 }
 
-.btn-calc.light-theme {
+.light-theme .btn-calc {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    #ffffff;
+  color: #2d2a37;
 }
 
 .secondary {
   color: #975dfa;
+}
+
+body.light-theme .secondary {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0.01%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #ffffff;
+  color: #2d2a37;
 }
 
 .tertiary {
@@ -116,6 +152,16 @@ body.light-theme #calculator span {
     0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.1);
 }
 
+body.light-theme > .tertiary {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0.01%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #462878;
+  color: #2d2a37;
+}
+
 .quartiary {
   background: linear-gradient(
       180deg,
@@ -126,4 +172,14 @@ body.light-theme #calculator span {
   box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04),
     0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26),
     0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.1);
+}
+
+body.light-theme .quartiary {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #7f45e2;
+  color: #2d2a37;
 }
